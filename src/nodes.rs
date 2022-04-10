@@ -381,6 +381,11 @@ impl Ast {
             last_line_blank: false,
         }
     }
+
+    /// Helper to get the raw contents of a node
+    pub fn content(&self) -> &[u8] {
+        &self.content
+    }
 }
 
 /// The type of a node within the document.
